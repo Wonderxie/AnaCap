@@ -3,11 +3,11 @@
 
 import sys
 sys.path.append('../')
-from loglizer.models import LogClustering
-from loglizer import dataloader, preprocessing
+from processor.models import LogClustering
+from processor import dataloader, preprocessing
 
-struct_log = 'C:/Users/Wonder/Documents/DeepLog-Project/data/total.csv' # The structured log file
-label_file = 'C:/Users/Wonder/Documents/DeepLog-Project/data/DNS-labeled.csv' # The anomaly label file
+struct_log = '../data/total.csv' # The structured log file
+label_file = '../data/DNS-labeled.csv' # The anomaly label file
 max_dist = 0.3 # the threshold to stop the clustering process
 anomaly_threshold = 0.3 # the threshold for anomaly detection
 
